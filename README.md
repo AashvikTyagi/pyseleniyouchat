@@ -12,7 +12,7 @@ my code accesses you.com and enters and reads text to and from different parts o
 
 you'll need to download [TO YOUR PATH] a specific browser driver (and change browser=webdriver.Firefox() in my code) depending on the browser you want selenium to control:
 
-- for firefox, https://webkit.org/blog/6900/webdriver-support-in-safari-10/
+- for firefox, https://github.com/mozilla/geckodriver/releases
 - for safari, https://webkit.org/blog/6900/webdriver-support-in-safari-10/
 - for edge, https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
 - for chrome, https://sites.google.com/chromium.org/driver/
