@@ -1,6 +1,5 @@
 # chatter
 chatter is a simple way to access you.com's youchat llm from python using selenium!
-i'm not working on improving this very actively.
 
 
 chatter supports context!
@@ -24,3 +23,5 @@ when you run the python script, it launches your chosen browser in headless mode
 
 !! the code currently waits for the answer to load by waiting for a loading sign element to appear and dissapear. this is very buggy as for short replies, it often doesn't appear, so i will be changing that soon. it does, currently, work very well for answers it takes longer to load !!
 
+
+note: i'm not working on improving chatter in general very actively but i will update it if i run into da problems and find da solutions.
