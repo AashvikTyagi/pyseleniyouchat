@@ -10,7 +10,7 @@ i created this when i wanted a free way to access an llm from python. i had foun
 my code accesses you.com and enters and reads text to and from different parts of the webpage (you.com) that i point to in my code by their xml path, which i determined by `inspect`ing the page using firefox's dev tools.
 
 
-you'll need to download [TO YOUR PATH] a specific browser driver (and change browser=webdriver.Firefox() in my code) depending on the browser you want selenium to control:
+you'll need to download [TO YOUR PATH] a specific browser driver (and change `browser=webdriver.Firefox()` in my code) depending on the browser you want selenium to control:
 
 - for firefox, https://github.com/mozilla/geckodriver/releases
 - for safari, https://webkit.org/blog/6900/webdriver-support-in-safari-10/
