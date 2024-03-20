@@ -20,12 +20,11 @@ def query(message):
     browser.find_element('xpath','//*[@id="search-input-textarea"]').send_keys(message+"\ue006")
     query_number+=1
 def answer():
-    t = 'xpath'
-    p = f"/html/body/div/div/div/div/div/div[2]/div[1]/div[2]/div/div/li/div[1]/div[{2*query_number}]/div/div[2]"
-    pb = f"/html/body/div/div/div/div/div/div[2]/div[1]/div[2]/div/div/li/button"
-    wait(browser,120).until(appeared([t,pb]))
-    wait(browser,120).until_not(appeared([t,pb]))
-    return browser.find_element(t,p).text
+    p = f"/html/body/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[1]/div/div[{2*query_number}]/div/div[2]"
+    pb = r"/html/body/div/div/div/div[1]/div/div[2]/div/div[1]/div/div[2]/div[1]/button"
+    wait(browser,10).until(appeared(['xpath',pb]))
+    wait(browser,60).until_not(appeared(['xpath',pb]))
+    return browser.find_element('xpath',p).text
 def __del__():
     browser.quit()
 
